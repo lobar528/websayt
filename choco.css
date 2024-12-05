@@ -1,0 +1,121 @@
+body{
+    background-color:  #F15BB5;
+
+}
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+.product-item {
+    width: 25%;
+    border: 0.5px solid coral;
+    position: relative;
+    object-fit: contain;
+    height: 300px;
+    
+}
+.product-img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.product-data{
+    position: absolute;
+    top: 0;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s;
+}
+.product-item:hover .product-data{
+    opacity: 1;
+}
+.product-name, .product-prise{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px 10px;
+    padding-left: 100px;
+    transition: 0.6s;
+}
+.product-item:hover .product-name,
+.product-item:hover .product-prise{
+    padding-left: 10px;
+}
+.product-control {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.minus, .count, .plus{
+    width: 33%;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    border: none;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+}
+
+
+footer{
+    background-color: #232323;
+    height: 30vh;
+
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+
+}
+.item{
+    margin-left: 2rem;
+    padding-top: 1.5rem;
+}
+.item img{
+    width: 100px;
+}
+.item p{
+    color: white;
+}
+.display {
+
+    padding-top: 1.5rem;
+    line-height: 1.5rem;
+}
+.display i{
+    padding-right: 5px;
+    color: white;
+}
+.display p{
+    color: white;
+}
+.footer{
+    margin-right: 10rem;
+}
+.classes{
+    display: flex;
+    gap: 2rem;
+    color: white;
+    margin-top: 1.5rem;
+}
+.classes i{
+    padding-right: 5px;
+}
+.copy{
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+}
+.classes p:hover{
+    color: #fadd22;
+}
+.display p:hover{
+    text-decoration: underline;
+}
