@@ -42,7 +42,8 @@ for(let i=1; i<=i; i++){
 <p>${basket_json[i]['price']}</p>
 <p>count:${basket_json[i]['count']}</p>
 <p class="price">total price:${basket_json[i]['total price']}</p>
-<button>delete</button>
+<button>-</button>
+<button>del</button>
    </div>
     `
  boxes.appendChild(div)
